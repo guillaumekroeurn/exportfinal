@@ -1,0 +1,283 @@
+ /*design general---------------------------------------------------------*/
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	margin: 0px;
+	background-image: url(images/country-quilt.png);
+	background-size: 300px;
+}
+
+/*Design typographique*/
+h1,h2,h3,h4{
+	font-family: 'Permanent Marker', cursive;
+}
+
+p{
+	font-family: 'Permanent Marker', cursive;
+	font-size: 20px;
+}
+
+a{
+	font-family: 'Permanent Marker', cursive;
+}
+
+h1{
+	color: #ff3b7f;
+	font-size: 40px;
+	margin-left: 25px;
+	border: 4px yellow double; 
+}
+
+h2{
+	color: #fa709a;
+	font-size: 35px;
+	text-align: center;
+	margin-top: 3vw;
+}
+
+.titre{
+	color: yellow;
+}
+
+h3{
+	color: #d414ff;
+	font-size: 25px;
+}
+
+
+/*design header------------------------------------------------------------*/
+header{
+	width: 100vw;
+	height: 100px;
+	background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+	display: flex;
+	justify-content: space-between; 
+	align-items: center;
+	position: fixed;
+	box-shadow: 0px 0px 30px #ff00d4;
+}
+
+.menufantome{
+	width: 100vw;
+	height: 100px;
+}
+
+.boutonMenu{
+	color: #b300ff;
+	text-decoration: none;
+	margin-right: 25px;
+	font-size: 20px;
+}
+
+/*Menu---------------------------------------------------------------------*/
+label{
+	font-size: 30px;
+	display: none;
+}
+
+#switch {
+	display: none;
+} 
+
+nav a:hover{
+	background-color: pink;
+}
+
+@media (max-width: 600px){
+	header{
+		display: block;
+	}
+
+	h1{
+		float: left;
+	}
+
+	label {
+		display: block;
+		float: right;
+	}
+
+	nav{
+		display: none;
+	}
+
+	#switch:checked + nav{
+		display: block;
+		clear: both;
+	}
+
+	nav a{
+		width: 100%;
+		display: block;
+		text-align: center;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+		border-bottom: 4px solid purple;	
+	}
+}
+
+/*colonne central------------------------------------------------------------*/
+.colonnecentral{
+	width: 80vw;
+	min-height: 80vh;
+	margin-left: 10vw;
+	background-image: linear-gradient(-225deg, #B6CEE8 0%, #F578DC 100%);
+	box-shadow: 0px 0px 20px #ff00d4;
+}
+
+@media (max-width: 1000px){
+	.colonnecentral{
+		width: 100vw;
+		margin-left: 0px;
+	}
+}
+
+/*section 1*/
+.logointro{ 
+	width: 50%;
+	margin-left: 25%;
+	margin-top: 5vw;
+}
+
+
+
+/*section 2-------------------------------------------------------------------*/
+.section2{
+	width: 100%;
+	min-height: 40vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 5vw;
+}
+
+.blocsection2{
+	text-align: center;
+	width: 25%;
+	min-height: 40vh;
+	margin-bottom: 10vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+.logo{
+	width: 100%; 
+}
+
+.logonet{
+	height: 30%; 
+	border-radius: 25px;
+}
+
+.introduction{
+	margin-top: 2vw;
+}
+
+.transition{
+	text-align: center;
+	margin-bottom: 12vw;
+	color: purple;
+	font-size: 20px;
+}
+
+@media (max-width: 1000px){
+	.section2{
+		flex-direction: column;
+	}
+
+	.blocsection2{
+		width: 30vw;
+		min-height: 25vw;
+		margin: 30px;
+	}
+}
+
+@media (max-width: 600px){
+
+	.blocsection2{
+		width: 60vw;
+		min-height: 25vh;
+	}
+}
+
+/*section3-------------------------------------------------------------------*/
+ .blocsection3{
+ 	display: flex;
+ 	justify-content: flex-start;
+ 	margin-bottom: 8vw;
+ }
+
+ .affiche{
+ 	width: 20%;
+ 	margin-left: 2vw;
+ 	box-shadow: 0px 0px 30px #00ffff;
+ 	border: 5px pink double;
+ }
+
+.descriptif{
+	width: 50%;
+	margin-left: 4vw;
+}
+
+@media (max-width: 600px){
+	.blocsection3{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.affiche{
+		margin-bottom: 3vw;
+		width: 40vw;
+	}
+
+	.descriptif{
+		text-align: center;
+	}
+}
+
+/*section4-------------------------------------------------------------------*/
+.section4{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 8vw;
+}
+
+.BA{
+	box-shadow: 0px 0px 30px #2873fc;
+	border: 5px #ff3838 groove;
+	border-radius: 30px;
+}
+
+@media (max-width: 1000px){
+	.section4{
+		flex-direction: column;
+	}
+}
+
+/*design footer--------------------------------------------------------------*/
+footer{
+	width: 100vw;
+	height: 100px;
+	background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer a{
+	text-decoration: none;
+	margin: 15px;
+	font-size: 20px;
+	color: #b300ff;
+}
+
+footer a:hover{
+	background-color: pink;
+}
